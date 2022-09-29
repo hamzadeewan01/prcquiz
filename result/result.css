@@ -1,0 +1,114 @@
+@font-face {
+    font-family: Josefin;
+    src: url(../fonts/Josefin_Sans/static/JosefinSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: Josefin_Light;
+    src: url(../fonts/Josefin_Sans/static/JosefinSans-Light.ttf);
+}
+
+* {
+    font-family: Josefin;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    background: #10266b;
+    height: 80px;
+}
+
+.head_img {
+    display: flex;
+    align-items: center;
+    width: 70px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.log_out_btn {
+    padding: 0 20px;
+}
+
+.log_out_btn button {
+    font-size: 15px;
+    color: black;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    background: #fff;
+    transition: .2s;
+}
+
+.log_out_btn button:active {
+    opacity: .5;
+    transition: .2s;
+}
+
+.main {
+    width: 75%;
+    margin: 100px auto 0 auto;
+}
+
+.main>h1 {}
+
+table {
+    border-top: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 10px;
+    border-bottom: 1px solid #dfdfdf !important;
+}
+
+th {
+    width: 20%;
+}
+
+.quiz_name {
+    color: #10266b;
+}
+
+
+
+/* Bootstrap */
+
+.accordion-button {
+    border: 1px solid #ddd !important;
+    color: black !important;
+    background: #f4f4f4 !important;
+}
+
+.accordion {
+    user-select: none;
+    cursor: pointer;
+}
+
+.accordion-button:focus {
+    background: #f4f4f4 !important;
+    box-shadow: none !important;
+    color: black !important;
+}
+
+.accordion-button:hover {
+    background: #ddd !important;
+
+}
+
+.accordion-body {
+    border: 1px solid #dfdfdf;
+    border-top: none;
+}
+
+.accordion-button::after {
+    width: 0 !important;
+}

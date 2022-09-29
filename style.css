@@ -1,0 +1,138 @@
+@font-face {
+    font-family: Josefin;
+    src: url(fonts/Josefin_Sans/static/JosefinSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: Josefin_Light;
+    src: url(fonts/Josefin_Sans/static/JosefinSans-Light.ttf);
+}
+
+
+* {
+    font-family: Josefin;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hidden {
+    display: none;
+}
+
+/* NavBar */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    background: #10266b;
+    height: 80px;
+    border-bottom-left-radius:20px ;
+    border-bottom-right-radius:20px ;
+}
+
+.head_img {
+    display: flex;
+    align-items: center;
+    width: 70px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.version {
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+/* Main Page */
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #e9ecef;
+    padding: 90px 0 50px 0;
+    text-align: center;
+    object-fit: contain;
+}
+
+.heading_1 {
+    font-family: Josefin_Light;
+    font-weight: lighter;
+    color: #10266b;
+    font-size: 80px;
+    padding-bottom: 30px;
+}
+
+.heading_2 {
+    font-family: Josefin_Light;
+    font-weight: lighter;
+    color: #212529;
+    font-size: 55px;
+    padding-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+.heading_3 {
+    font-size: 22px;
+    font-family: Josefin_Light;
+    font-weight: lighter;
+    color: #484d4f;
+    padding-bottom: 30px;
+}
+
+.heading_4 {
+    font-size: 20px;
+    color: #212529;
+    padding-bottom: 30px;
+}
+
+.continue_with_google_btn {
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 15px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    transition: .2s;
+}
+
+.continue_with_google_btn:active {
+    opacity: .5;
+    transition: .2s;
+}
+
+/* Footer */
+
+footer {
+    background: white;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+footer p span {
+    color: #007bff;
+    cursor: pointer;
+}
+
+footer p span:hover {
+    border-bottom: 2px solid #007bff;
+}
+
+.loader {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loading {
+    width: 80px;
+}

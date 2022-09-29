@@ -1,0 +1,176 @@
+@font-face {
+    font-family: google sans;
+    src: url(../fonts/google-sans-cufonfonts/ProductSans-Regular.ttf);
+}
+
+* {
+    font-family: google sans;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 515px;
+    height: 679px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header {
+    user-select: none;
+    color: grey;
+    font-size: 15px;
+    height: 40px;
+    border-bottom: 1px solid rgb(206, 205, 205);
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    gap: 10px;
+}
+
+.image {
+    display: flex;
+    align-items: center;
+    width: 20px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 50px;
+}
+
+.sign_up {
+    margin: 5px 0 30px 0;
+}
+
+.sign_up h2 {
+    margin: 10px 0;
+    font-weight: lighter;
+    text-align: center;
+    color: black;
+
+}
+
+.sign_up_input label {
+    text-align: left;
+}
+
+.sign_up_input {
+    display: flex;
+}
+
+.input_info,.email_info,.password_info {
+    margin: 10px 5px 10px 0;
+    width: 100%;
+}
+
+.name {
+    padding: 5px 0;
+    color: rgb(94, 94, 94);
+    font-size: 20px;
+}
+
+.password {
+    padding: 5px 0;
+    color: rgb(94, 94, 94);
+    font-size: 20px;
+}
+
+
+#fname_input,
+#lname_input,
+#email_input,
+#password_input {
+    width: 100%;
+    padding: 15px;
+    font-size: 17px;
+    color: rgb(37, 37, 37);
+    border: 2px solid rgb(199, 199, 199);
+    border-radius: 5px;
+    transition: .2s;
+}
+
+#password_input:focus {
+    transition: .2s;
+    border: 2px solid #007bff;
+    outline: none;
+}
+
+#password_input::placeholder {
+    color: rgb(94, 94, 94);
+}
+
+.check {
+    display: flex;
+    gap: 10px;
+}
+
+.check label {
+    user-select: none;
+    cursor: pointer;
+}
+
+#fname_input:focus,
+#lname_input:focus {
+    transition: .2s;
+    border: 2px solid #007bff;
+    outline: none;
+}
+
+#fname_input::placeholder,
+#lname_input::placeholder {
+    color: rgb(94, 94, 94);
+}
+
+.create_login_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.create_account_link {
+    color: #007bff;
+    cursor: pointer;
+}
+
+.sign_up_btn {
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    background: #007bff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: .2s;
+}
+
+.sign_up_btn:active {
+    opacity: .5;
+    transition: .2s;
+}
+
+.hidden {
+    display: none;
+}
+
+#required {
+    text-align: left;
+    padding: 10px 0;
+    color: red;
+}
+
+.loader {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loading {
+    width: 80px;
+}

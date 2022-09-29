@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Quiz App</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="shortcut icon"
+    href="../images/HD.png"
+    type="image/x-icon">
+</head>
+
+<body>
+    <div class="loader">
+        <img id="loading" src="../images/Rolling-1s-200px.gif" alt="">
+    </div>
+    <nav class="hidden">
+        <div class="head_img">
+            <a href="../index.html">
+                <img width="100%" src="../images/logo.png" alt="">
+            </a>
+        </div>
+        <div class="log_out_btn">
+            <!-- <p>Log Out</p> -->
+            <button onclick="result_page()">Result</button>
+            <button onclick="logOut()">Log Out</button>
+        </div>
+    </nav>
+
+    <div class="main hidden">
+        <div class="heading"></div>
+        <div class="quizes_box">
+            <div class="python_quiz quiz_box">
+                <div class="name">Business Writing & Comprehension Skills(PRC-1)</div>
+                <div class="subjects">6 Chapters</div>
+                <div class="join_btn">
+                    <a href="./Business_Writing_&_Comprehension/Business_Writing_&_Comprehension.html">   <button >Join</button></a>
+                </div>
+            </div>
+            <div class="java_quiz quiz_box">
+                <div class="name">Quantitative Methods (PRC-2)</div>
+                <div class="subjects">15 Chapters</div>
+                <div class="join_btn">
+                    <button disabled onclick="joinQuiz('java','2','Java')">Join</button>
+                </div>
+            </div>
+            <div class="c++_quiz quiz_box">
+                <div class="name">Principles Of Economics (PRC-3)</div>
+                <div class="subjects">13 Subjects</div>
+                <div class="join_btn">
+                    <button disabled onclick="joinQuiz('c++','1','C++')">Join</button>
+                </div>
+            </div>
+            <div class="web_mobile_hybrid_quiz quiz_box">
+                <div class="name">Introduction To Business (PRC-5)</div>
+                <div class="subjects">10 Chapters</div>
+                <div class="join_btn">
+                 <a href="./Introduction_To_Business/Introduction To Business.html">   <button >Join</button></a>
+                </div>
+            </div>
+            <div class="flutter_quiz quiz_box">
+                <div class="name">Introduction To Accounting (PRC-4)</div>
+                <div class="subjects">10 Chapters</div>
+                <div class="join_btn">
+                    <button disabled onclick="joinQuiz('flutter','3','Flutter')">Join</button>
+                </div>
+            <!-- </div>
+            <div class="c_quiz quiz_box">
+                <div class="name">C</div>
+                <div class="subjects">1 Subjects</div>
+                <div class="join_btn">
+                    <button disabled onclick="joinQuiz('c','1')">Join</button>
+                </div>
+            </div>
+        </div> -->
+    </div>
+</body>
+<script src="home.js"></script>
+
+</html>

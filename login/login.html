@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in - Google Accounts</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="shortcut icon"
+    href="../images/HD.png"
+    type="image/x-icon">
+</head>
+
+<body>
+    <div class="loader">
+        <img id="loading" src="../images/Rolling-1s-200px.gif" alt="">
+    </div>
+    <header class="hidden">
+        <div class="image">
+            <img width="100%" src="../images/google.png" alt="">
+        </div>
+        <p class="head_text">
+            Sign in with Google
+        </p>
+    </header>
+    <form class="main hidden" onsubmit="loginBtn()">
+
+        <div class="sign_in">
+            <h2>Sign in</h2>
+            <p>to continue to
+                <span>quiz-app</span>
+            </p>
+        </div>
+        <div class="sign_in_input">
+            <div class="email_info">
+                <label for="email_input">
+                    <p class="name">Email : </p>
+                </label>
+                <input class="id1" placeholder="Enter Your Email" type="text" id="email_input">
+                <p class="hidden" id="required">*wrong Email</p>
+                <p class="hidden" id="required">*Email is Incorrect</p>
+            </div>
+            <div class="password_info">
+                <label for="password_input">
+                    <p class="password">Password : </p>
+                </label>
+                <input class="id2" placeholder="Enter Your Password" type="password" id="password_input">
+                <p class="hidden" id="required">*Password length must be greater than 6 and less than 21 and contain
+                    these characters{A,a,1,@}</p>
+                <p class="hidden" id="required">*Password is Incorrect</p>
+            </div>
+            <div class="check">
+                <input onclick="showPass()" id="checkbox" type="checkbox">
+                <label for="checkbox">Show Password</label>
+            </div>
+        </div>
+        <div class="create_login_row">
+            <p onclick="signUp()" class="create_account_link">Create account</p>
+            <button type="submit" class="login_btn">Login</button>
+        </div>
+    </form>
+
+
+</body>
+<script src="login.js"></script>
+
+</html>
